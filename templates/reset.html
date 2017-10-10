@@ -1,0 +1,15 @@
+<html>
+    <head>
+          <title>Counter</title>
+    </head>
+    <body>
+       
+        <h1>Counter</h1>
+        <p>page reset to:</p>
+        <h3>{{session['count']}}</h3>
+        <!-- <h4>times</h4> -->
+        <!-- <button type='reset'>+2</button> -->
+        <a href="{{ url_for('count_reloads') }}" type='reset'><button>RELOAD PAGE</button></a>
+        <a href="{{ url_for('reset_counter') }}" type='reset'><button>RESET COUNTER</button></a>
+    </body>
+</html>
